@@ -1,9 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Header from '../components/Header';
 
 export default function Home() {
     return (
         <View style={styles.container}>
-        <Text>A Rússia é pior que a Bielórússia</Text>
+            <Header />
+            <View style={styles.conteudo}>
+                <Text>Home</Text>
+            </View>
         </View>
     );
 }
@@ -11,9 +15,7 @@ export default function Home() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#3496eb',
-        alignItems: 'center',
-        justifyContent:'center',
+        backgroundColor: '#ffffff',
 
-    }, 
+    },
 });
